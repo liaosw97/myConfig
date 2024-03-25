@@ -10,7 +10,7 @@ Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 Invoke-Expression (oh-my-posh --init --shell pwsh --config "$(scoop prefix oh-my-posh)/themes/jandedobbeleer.omp.json")
 
 # FZF
-Get-Command fzf*.exe
+#Get-Command fzf*.exe
 #Get-ChildItem . -Recurse -Attributes Directory | Invoke-Fzf | Set-Location
 
 #Get-ChildItem . -Recurse -Attributes !Directory | Invoke-Fzf | % { notepad $_ }
@@ -39,7 +39,7 @@ Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -HistorySearchCursorMovesToEnd
 
 # 设置 Tab 为菜单补全和 Intellisense
-Set-PSReadLineKeyHandler -Key "Tab" -Function MenuComplete
+#Set-PSReadLineKeyHandler -Key "Tab" -Function MenuComplete
 
 # 设置 Ctrl+d 为退出 PowerShell
 Set-PSReadlineKeyHandler -Key "Ctrl+d" -Function ViExit
