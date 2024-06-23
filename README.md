@@ -27,4 +27,15 @@
 
     ```
     source ~/.config/myConfig/bash/win.bash_profile
+
+
+    ```
+   
+-   gitconfig
+
+    在 ~.gitconfig 中添加
+
+    ```
+    [include]
+    path = ~/.config/myConfig/gitConfig/.gitconfig``
     ```
